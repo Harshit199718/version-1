@@ -1,0 +1,167 @@
+.user-management-page {
+    width: 100%;
+    height: 100vh;
+    position: relative ;
+
+
+    .user-management-sec {
+        width: 80%;
+        height: 96%;
+        padding: 40px;
+        position: relative ;
+
+
+        .user-management-header {
+            width: 100%;
+            padding: 10px 30px;
+            background-image: repeating-linear-gradient(45deg, rgba(0,0,0,0.07),rgba(0,0,0,0.05),rgba(0,0,0,0.02),rgba(0,0,0,0.08),rgba(0,0,0,0.07),rgba(0,0,0,0.03),rgba(0,0,0,0.06),rgba(0,0,0,0.08),rgba(0,0,0,0.02),rgba(0,0,0,0.08),rgba(0,0,0,0.02),rgba(0,0,0,0.07),rgba(0,0,0,0.08),rgba(0,0,0,0.09),rgba(0,0,0,0.01) 3px),linear-gradient(90deg, rgb(218, 30, 196),rgb(34, 27, 151));
+            border-left: 10px solid rgb(95, 74, 74);
+            border-right: 10px solid rgb(95, 74, 74);
+            border-bottom:  2px solid #333333;
+            border-radius: 10px;
+            
+            h1 {
+                font-size: 3rem;
+                color: #f6f6f6;
+            }
+
+            .btn-add-user {
+                width: 100%;
+                
+                .cerate-user-btn {
+                    width: 100px;
+                    height: 40px;
+                    margin: 5px 10px;
+                    background-image: linear-gradient(90deg,rgba(34, 27, 151, 0.7),rgb(218, 30, 196));
+                    border: none;
+                    border-radius: 5px;
+                    font-size: 16px;
+                    font-weight: bold;
+                    color: #f6f6f6;
+                }
+            }
+        }
+
+        .user-table {
+            width: 100%;
+            height: 100%;
+            margin-top: 20px;
+
+            table {
+                width: 100%;
+            }
+
+            table tr td:nth-child(1){
+                width: 25%;
+            }
+
+            table tr td:nth-child(2){
+                width: 50%;
+            }
+
+            table th {
+                font-size: 24px;
+            }
+            
+            table, th, td {
+                height: 40px;
+                border:2px solid black;
+                border-collapse: collapse;
+                padding: 5px 10px;
+                font-size: 20px;
+                font-weight: bold;
+                color:#333 ;
+
+                .edit-btn {
+                    padding: 5px 16px;
+                    font-size: 16px;
+                    font-weight: bold;
+                    border-radius: 6px;
+                    margin: 0 10px;
+                    color: #f6f6f6;
+                }
+                
+                .edit-btn:first-child {
+                    background-color: #2a9101;
+                }
+
+                .edit-btn:last-child {
+                    background-color: #f12e52;
+                }
+            }
+        }
+    }
+}
+
+.user-management-page::before {       
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: radial-gradient(circle at 13% 62%, hsla(191,0%,94%,0.1) 0%, hsla(191,0%,94%,0.1) 72%,transparent 72%, transparent 80%,transparent 80%, transparent 100%),radial-gradient(circle at 46% 87%, hsla(191,0%,94%,0.1) 0%, hsla(191,0%,94%,0.1) 29%,transparent 29%, transparent 76%,transparent 76%, transparent 100%),radial-gradient(circle at 46% 32%, hsla(191,0%,94%,0.1) 0%, hsla(191,0%,94%,0.1) 34%,transparent 34%, transparent 75%,transparent 75%, transparent 100%),radial-gradient(circle at 3% 53%, hsla(191,0%,94%,0.1) 0%, hsla(191,0%,94%,0.1) 11%,transparent 11%, transparent 57%,transparent 57%, transparent 100%),radial-gradient(circle at 53% 54%, hsla(191,0%,94%,0.1) 0%, hsla(191,0%,94%,0.1) 9%,transparent 9%, transparent 27%,transparent 27%, transparent 100%),linear-gradient(45deg, rgb(224, 200, 224),rgb(210,7,160));
+    opacity: 0.7;
+}
+
+@media(max-width:1024px) {
+    .edit-btn {
+        height: 40px;
+        
+        span {
+            display: none;
+        }
+    }
+    
+}
+
+@media(max-width:630px) {
+    .user-management-page {
+    
+        .user-management-sec {
+            width: 100%;
+            padding: 10px;
+
+            .user-management-header {
+                width: 100%;
+                padding: 10px;
+                
+                h1 {
+                    font-size: 2rem;
+                }
+    
+                .btn-add-user {
+                    
+                    .cerate-user-btn {
+                        width: 80px;
+                        height: 30px;
+                        margin: 5px;
+                        font-size: 12px;
+                    }
+                }
+            }
+    
+            .user-table {
+                margin-top: 10px;
+
+                table th {
+                    font-size: 20px;
+                }
+                
+                table, th, td {
+                    height: 30px;
+                    padding: 5px;
+                    font-size: 12px;
+    
+                    .edit-btn {
+                        padding: 5px 9px;
+                        font-size: 12px;
+                        margin: 0 4px;
+                        width: 30px;
+                        height: 30px;
+                    }
+                }
+            }
+        }
+    }
+}

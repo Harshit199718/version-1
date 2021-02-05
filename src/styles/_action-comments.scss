@@ -1,0 +1,195 @@
+.action-comments-page {
+    width: 100%;
+    height: 100vh;
+    box-shadow: inset 100px 100px 200px 40px rgba(255,218,185, 0.5);
+    position: relative ;
+
+
+    .action-comments-sec {
+        width: 80%;
+        height: 96%;
+        padding: 40px;
+        position: relative ;
+
+
+        .action-comments-header {
+            width: 100%;
+            padding: 10px 30px;
+            background-image: repeating-linear-gradient(45deg, rgba(0,0,0,0.07),rgba(0,0,0,0.05),rgba(0,0,0,0.02),rgba(0,0,0,0.08),rgba(0,0,0,0.07),rgba(0,0,0,0.03),rgba(0,0,0,0.06),rgba(0,0,0,0.08),rgba(0,0,0,0.02),rgba(0,0,0,0.08),rgba(0,0,0,0.02),rgba(0,0,0,0.07),rgba(0,0,0,0.08),rgba(0,0,0,0.09),rgba(0,0,0,0.01) 3px),linear-gradient(90deg, rgb(218, 30, 196),rgb(34, 27, 151));
+            border-left: 10px solid rgb(95, 74, 74);
+            border-right: 10px solid rgb(95, 74, 74);
+            border-bottom:  2px solid #333333;
+            border-radius: 10px;
+            
+            h1 {
+                font-size: 3rem;
+                color: #f6f6f6;
+            }
+        }
+
+        .comment-table {
+            padding: 30px;
+            width: 100%;
+            height: 90%;
+            overflow-y: scroll;
+
+            .comment-headers {
+                width: 100%;
+                border-bottom:  2px solid #333333;
+
+                .action-comment-header {
+                    width: 50%;
+
+                    .comment-header {
+                        margin: 10px 16px;
+                        padding: 10px;
+                        color: #fff;
+                        font-weight: 200 !important;
+                        text-align: center;
+                        border-radius: 6px;
+                    }
+        
+                    .warning {
+                        background-color: #f2994a;
+                    }
+        
+                    .action {
+                        background-color: #2d9cdb ;
+                    }
+                }
+
+                .border-rght {
+                    border-right: 2px solid #333333;
+                }
+            }
+            
+            .comment-col {
+                width: 50%;
+                height: 100%;
+                border-bottom:  2px solid #333333;
+            }
+            
+            .border-rght {
+                border-right: 2px solid #333333;
+            }
+        }
+    }
+}
+
+.action-comments-page::before {       
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: radial-gradient(circle at 13% 62%, hsla(191,0%,94%,0.1) 0%, hsla(191,0%,94%,0.1) 72%,transparent 72%, transparent 80%,transparent 80%, transparent 100%),radial-gradient(circle at 46% 87%, hsla(191,0%,94%,0.1) 0%, hsla(191,0%,94%,0.1) 29%,transparent 29%, transparent 76%,transparent 76%, transparent 100%),radial-gradient(circle at 46% 32%, hsla(191,0%,94%,0.1) 0%, hsla(191,0%,94%,0.1) 34%,transparent 34%, transparent 75%,transparent 75%, transparent 100%),radial-gradient(circle at 3% 53%, hsla(191,0%,94%,0.1) 0%, hsla(191,0%,94%,0.1) 11%,transparent 11%, transparent 57%,transparent 57%, transparent 100%),radial-gradient(circle at 53% 54%, hsla(191,0%,94%,0.1) 0%, hsla(191,0%,94%,0.1) 9%,transparent 9%, transparent 27%,transparent 27%, transparent 100%),linear-gradient(184deg, rgb(224, 200, 224),rgb(210,7,160));
+    opacity: 0.7;
+}
+
+@media(max-width:1024px) {
+    .action-comments-page {
+    
+        .action-comments-sec {
+            width: 100%;
+            padding: 20px;
+    
+    
+            .action-comments-header {
+                padding: 10px 30px;
+                border-left: 10px solid rgb(95, 74, 74);
+                border-radius: 10px;
+    
+                h1 {
+                    font-size: 2.8rem;
+                }
+            }
+    
+            .comment-table {
+                padding: 10px;
+    
+                .comment-headers {
+    
+                    .action-comment-header {
+
+                        h1.comment-header {
+                            font-size: 16px !important;
+                        }
+                    }
+                }
+
+                .border-rght {
+                    border-right: 2px solid #333333;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:800px) {
+    .action-comments-page {
+    
+        .action-comments-sec {
+    
+            .action-comments-header {
+                border-right: 10px solid rgb(95, 74, 74);
+                border-bottom:  2px solid #333333;
+    
+                h1 {
+                    font-size: 2rem;
+                }
+            }
+    
+            .comment-table {
+                padding: 10px;
+    
+                .comment-col {
+                        flex-direction: column!important;
+                }
+                
+                .border-rght {
+                    border-right: 2px solid #333333;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:420px) {
+    .action-comments-page {
+    
+        .action-comments-sec {
+            padding: 10px 0;
+    
+            .action-comments-header {
+            flex-direction: column;
+    
+                h1 {
+                    font-size: 1.6rem;
+                }
+            }
+    
+            .comment-table {
+                padding: 10px;
+    
+                .comment-headers {
+    
+                    .comment-col-header {
+
+                        .comment-header {
+                            font-size: 20px;
+                        }
+                    }
+                }
+
+                .comment-col {
+                        flex-direction: column!important;
+                }
+                
+                .border-rght {
+                    border-right: 2px solid #333333;
+                }
+            }
+        }
+    }
+}

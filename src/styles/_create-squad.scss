@@ -1,0 +1,343 @@
+.create-squad-page {
+    width: 100%;
+    height: 100%;
+    box-shadow: inset 100px 100px 200px 40px rgba(255,218,185, 0.5);
+    position: relative ;
+    
+    .create-squad-container {
+        margin: 40px 30px;
+        width: 70%;
+        box-shadow: 20px 20px 100px 0 rgba(255,218,185, 0.5);
+        border: 1px solid rgb(95, 74, 74);
+        border-radius: .5rem;
+        background-color: #fff;
+        padding: 60px 80px;
+        position: relative ;
+        overflow: hidden;
+
+        .create-squad-header {
+            color: rgb(95, 74, 74);
+            border-left: 10px solid rgb(95, 74, 74);
+            border-radius: 10px;
+            font-size: 4rem;
+            margin-bottom: 30px;
+            position: relative ;
+
+        }
+
+        .create-squad-form {
+            width: 80%;
+            height: 100%;
+            position: relative ;
+
+
+            .squad-name {
+                width: 90%;
+                margin-bottom: 0 !important ;
+                justify-content: space-between;
+                align-items: center;
+
+                input {
+                    width: 340px;
+                    height: 60px;
+                    border-radius: 8px;
+                    font-size: 20px;
+                }
+            }
+            
+            .avatar-icon {
+                width: 120px;
+                height: 120px;
+                border: 1px solid rgb(95, 74, 74);
+                border-radius: 2px;
+                filter: drop-shadow(2px 2px 5px);
+            }
+            
+            .squad-members-header {
+                color: rgb(95, 74, 74);
+                border-left: 10px solid rgb(95, 74, 74);
+                border-radius: 10px;
+                margin: 30px 0;
+            }
+            
+            .squad-members {
+                width: 40%;
+                margin: 26px 0;
+                font-size: 16px;
+
+
+                .squad-member{
+                    background-color: rgb(145, 145, 145);
+                    padding: 5px 20px;
+                    border-radius: 10px ;
+                }
+            }
+
+            .member-avatar-icon {
+                width: 80px;
+                height: 80px;
+                border: 1px solid rgb(95, 74, 74);
+                border-radius: 2px;
+                filter: drop-shadow(2px 2px 5px);
+            }
+
+            .add-member {
+                width: 90%;
+                margin: 40px 0;
+
+                input {
+                    width: 280px;
+                    height: 60px;
+                    border-radius: 8px;
+                    font-size: 20px;
+                }
+                
+                .input-member-positon {
+                    font-size: 20px;
+                    width: 140px;
+                    height: 60px;
+                    
+                    .custom-select {
+                        height: 60px !important;
+
+                        option {
+                            font-size: 16px;
+                        }
+                    }
+                }
+
+                .add-btn {
+                    background-color: #fff;
+                    padding: 6px 10px;
+                    border: 1px solid #838383;
+                    color: #6200ee;
+                }
+            }
+
+            .submit-btn {
+                
+                .btn-primary {
+                    font-size: 20px;
+                    padding: 5px 16px;
+                    background-color: #6200ee;
+                    border: none;
+                }
+            }
+        }
+    }
+}
+
+.create-squad-page::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: radial-gradient(circle at 13% 62%, hsla(191,0%,94%,0.1) 0%, hsla(191,0%,94%,0.1) 72%,transparent 72%, transparent 80%,transparent 80%, transparent 100%),radial-gradient(circle at 46% 87%, hsla(191,0%,94%,0.1) 0%, hsla(191,0%,94%,0.1) 29%,transparent 29%, transparent 76%,transparent 76%, transparent 100%),radial-gradient(circle at 46% 32%, hsla(191,0%,94%,0.1) 0%, hsla(191,0%,94%,0.1) 34%,transparent 34%, transparent 75%,transparent 75%, transparent 100%),radial-gradient(circle at 3% 53%, hsla(191,0%,94%,0.1) 0%, hsla(191,0%,94%,0.1) 11%,transparent 11%, transparent 57%,transparent 57%, transparent 100%),radial-gradient(circle at 53% 54%, hsla(191,0%,94%,0.1) 0%, hsla(191,0%,94%,0.1) 9%,transparent 9%, transparent 27%,transparent 27%, transparent 100%),linear-gradient(237deg, rgb(224, 200, 224),rgb(210,7,160));
+    opacity: 0.7;
+}
+
+.create-squad-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: radial-gradient(circle at 53% 49%, rgba(158, 158, 158,0.05) 0%, rgba(158, 158, 158,0.05) 50%,rgba(55, 55, 55,0.05) 50%, rgba(55, 55, 55,0.05) 100%),radial-gradient(circle at 48% 15%, rgba(33, 33, 33,0.05) 0%, rgba(33, 33, 33,0.05) 50%,rgba(184, 184, 184,0.05) 50%, rgba(184, 184, 184,0.05) 100%),radial-gradient(circle at 49% 38%, rgba(10, 10, 10,0.05) 0%, rgba(10, 10, 10,0.05) 50%,rgba(233, 233, 233,0.05) 50%, rgba(233, 233, 233,0.05) 100%),linear-gradient(215deg, rgb(182,227,255),rgb(166,52,249));
+    opacity: 0.6;
+}
+
+
+
+@media(max-width:1200px) {
+    .create-squad-page {
+        
+        .create-squad-container {
+            width: 90%;
+
+            .create-squad-form {
+                width: 100%;
+    
+                .squad-name {
+                    width: 90%;
+                }
+                
+                .squad-members {
+                    width: 70%;
+                }
+    
+                .add-member {
+                    width: 90%;
+                    flex-direction: column;
+    
+                    .add-btn {
+                        margin-top: 16px;
+                    }
+                }
+
+                .submit-btn {
+                    margin-right: 40px;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:800px) {
+    .create-squad-page {
+
+        .create-squad-container {
+
+            .create-squad-header {
+                font-size: 3rem;
+                margin-bottom: 30px;
+            }
+    
+            .create-squad-form {
+    
+                .squad-name {
+
+                    input {
+                        width: 240px;
+                        height: 44px;
+                        font-size: 16px;
+                    }
+                }
+                
+                .avatar-icon {
+                    width: 100px;
+                    height: 100px;
+                }
+
+                .squad-members-header {
+                    font-size: 22px;
+                    margin-top: 30px ;
+                }
+                
+                .squad-members {
+                    margin: 16px 0;
+                    font-size: 16px;
+                }
+    
+                .member-avatar-icon {
+                    width: 50px;
+                    height: 50px;
+                }
+    
+                .add-member {
+                    margin: 20px 0;
+    
+                    input {
+                        width: 240px;
+                        height: 44px;
+                        font-size: 16px;
+                    }
+                    
+                    .input-member-positon {
+                        font-size: 14px;
+                        width: 240px;
+                        height: 44px;
+                        
+                        .custom-select {
+                            height: 44px !important;
+    
+                            option {
+                                font-size: 16px;
+                            }
+                        }
+                    }
+    
+                    .add-btn {
+                        padding: 6px 10px;
+                    }
+                }
+    
+                .submit-btn {
+                    
+                    .btn-primary {
+                        font-size: 16px;
+                        padding: 5px 16px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 620px) {
+    .create-squad-page {
+
+        .create-squad-container {
+            padding: 20px;
+    
+            .create-squad-header {
+                font-size: 2rem;
+                margin-bottom: 30px;
+            }
+    
+            .create-squad-form {
+                
+                .squad-name {
+                    flex-direction: column-reverse ;
+                    
+                    input {
+                        margin: 10px ;
+                        font-size: 12px;
+                    }
+                }
+                
+                .avatar-icon {
+                    width: 100px;
+                    height: 100px;
+                }
+                
+                .squad-members-header {
+                    font-size: 22px;
+                    margin-top: 30px ;
+                }
+                
+                .squad-members {
+                    flex-direction: column-reverse ;
+                    width: 90%;
+                    font-size: 12px;
+                    
+                    .squad-member {
+                        margin: 5px 0;
+                        font-size: 10px;
+                    }
+                }
+                
+                .add-member {
+                    margin: 10px 0;
+                    align-items: center;
+                    
+                    input {
+                        font-size: 12px;
+                    }
+                    
+                    .input-member-positon {
+                        font-size: 12px;
+                        
+                        .custom-select {
+                            height: 44px !important;
+    
+                            option {
+                                font-size: 12px;
+                            }
+                        }
+                    }
+                }
+    
+                .submit-btn {
+                    margin-bottom: 20px;
+                    
+                    .btn-primary {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,409 @@
+.comment-card {
+    width: 80%;
+    margin: 10px auto;
+    flex-direction: column;
+
+    .comment-success {
+        padding: 16px;
+        border: 1px solid #66ac4b;
+        border-radius: 6px;
+        background: aliceblue;
+        box-shadow: 10px 10px 40px 0 #66ac4b;
+        font-size: 18px;
+    }
+    .comment-denger {
+        padding: 16px;
+        border: 1px solid #f12e52;
+        border-radius: 6px;
+        background: aliceblue;
+        box-shadow: 10px 10px 40px 0 #f12e52;
+        font-size: 18px;
+    }
+    .comment-info {
+        padding: 16px;
+        border: 1px solid #865ebe;
+        border-radius: 6px;
+        background: aliceblue;
+        box-shadow: 10px 10px 40px 0 #865ebe;
+        font-size: 18px;
+    }
+    .comment-warning {
+        padding: 16px;
+        border: 1px solid #f2994a;
+        border-radius: 6px;
+        background: aliceblue;
+        box-shadow: 10px 10px 40px 0 #f2994a;
+        font-size: 18px;
+    }
+    .comment-action {
+        padding: 16px;
+        border: 1px solid #2d9cdb;
+        border-radius: 6px;
+        background: aliceblue;
+        box-shadow: 10px 10px 40px 0 #2d9cdb;
+        font-size: 18px;
+    }
+}
+
+.comment.dragging{
+    opacity: 0.5;
+}
+
+@media(max-width:420px) {
+    .comment-card {
+        width: 90%;
+    
+        .comment-success {
+            padding: 16px;
+            font-size: 12px;
+        }
+        .comment-denger {
+            padding: 16px;
+            font-size: 12px;
+        }
+        .comment-info {
+            padding: 16px;
+            font-size: 12px;
+        }
+        .comment-warning {
+            padding: 16px;
+            font-size: 12px;
+        }
+        .comment-action {
+            padding: 16px;
+            font-size: 12px;
+        }
+    }
+}
+
+// styles for gouped comments
+// for green color comment section
+.grouped-comment-card-success {
+    width: 80%;
+    margin: 10px auto;
+    border: 1px solid #66ac4b;
+    border-radius: 6px;
+    box-shadow: 10px 10px 40px 0 #66ac4b;
+    margin-bottom: 24px;
+
+    .grouped-comment-header-success {
+        background-color: #66ac4b;
+        width: 100%;
+        height: 48px;
+        text-align: center;
+        vertical-align: middle;
+        margin: 0 !important;
+        padding: 6px;
+        color: #fff;
+        font-size: 1.6rem;
+    }
+
+    .comment-card{
+        width: 100%;
+        margin: 0 !important;
+
+        .comment {
+            margin: 0 !important;
+            padding: 20px;
+            border: 1px solid #66ac4b;
+            border-radius: 6px;
+            background: aliceblue;
+            box-shadow: 10px 10px 40px 0 #66ac4b;
+            font-size: 18px;
+        }
+    }
+}
+
+// for red color comment section
+
+.grouped-comment-card-denger {
+    width: 80%;
+    margin: 10px auto;
+    border: 1px solid #f12e52;
+    border-radius: 6px;
+    box-shadow: 10px 10px 40px 0 #f12e52;
+    margin-bottom: 24px;
+
+    .grouped-comment-header-denger {
+        background-color: #f12e52 ;
+        width: 100%;
+        height: 48px;
+        text-align: center;
+        vertical-align: middle;
+        margin: 0 !important;
+        padding: 6px;
+        color: #fff;
+        font-size: 1.6rem;
+    }
+
+    .comment-card{
+        width: 100%;
+        margin: 0 !important;
+
+        .comment {
+            margin: 0 !important;
+            padding: 20px;
+            border: 1px solid #f12e52;
+            border-radius: 6px;
+            background: aliceblue;
+            box-shadow: 10px 10px 40px 0 #f12e52;
+            font-size: 18px;
+        }
+    }
+}
+
+// for perpal color comment section
+
+.grouped-comment-card-info {
+    width: 80%;
+    margin: 10px auto;
+    border: 1px solid #865ebe;
+    border-radius: 6px;
+    box-shadow: 10px 10px 40px 0 #865ebe;
+    margin-bottom: 24px;
+
+    .grouped-comment-header-info {
+        background-color: #865ebe;
+        width: 100%;
+        height: 48px;
+        text-align: center;
+        vertical-align: middle;
+        margin: 0 !important;
+        padding: 6px;
+        color: #fff;
+        font-size: 1.6rem;
+    }
+
+    .comment-card{
+        width: 100%;
+        margin: 0 !important;
+
+        .comment {
+            margin: 0 !important;
+            padding: 20px;
+            border: 1px solid #865ebe;
+            border-radius: 6px;
+            background: aliceblue;
+            box-shadow: 10px 10px 40px 0 #865ebe;
+            font-size: 18px;
+        }
+    }
+}
+
+// for yellow color comment section
+
+.grouped-comment-card-warning {
+    width: 80%;
+    margin: 10px auto;
+    border: 1px solid #f2994a;
+    border-radius: 6px;
+    box-shadow: 10px 10px 40px 0 #f2994a;
+    margin-bottom: 24px;
+
+    .grouped-comment-header-warning {
+        background-color: #f2994a;
+        width: 100%;
+        height: 48px;
+        text-align: center;
+        vertical-align: middle;
+        margin: 0 !important;
+        padding: 6px;
+        color: #fff;
+        font-size: 1.6rem;
+    }
+
+    .comment-card{
+        width: 100%;
+        margin: 0 !important;
+
+        .comment {
+            margin: 0 !important;
+            padding: 20px;
+            border: 1px solid #f2994a;
+            border-radius: 6px;
+            background: aliceblue;
+            box-shadow: 10px 10px 40px 0 #f2994a;
+            font-size: 18px;
+        }
+    }
+}
+// for skyblue color comment section
+
+.grouped-comment-card-action {
+    width: 80%;
+    margin: 10px auto;
+    border: 1px solid #2d9cdb;
+    border-radius: 6px;
+    box-shadow: 10px 10px 40px 0 #2d9cdb;
+    margin-bottom: 24px;
+
+    .grouped-comment-header-action {
+        background-color: #2d9cdb;
+        width: 100%;
+        height: 48px;
+        text-align: center;
+        vertical-align: middle;
+        margin: 0 !important;
+        padding: 6px;
+        color: #fff;
+        font-size: 1.6rem;
+    }
+
+    .comment-card{
+        width: 100%;
+        margin: 0 !important;
+
+        .comment {
+            margin: 0 !important;
+            padding: 20px;
+            border: 1px solid #2d9cdb;
+            border-radius: 6px;
+            background: aliceblue;
+            box-shadow: 10px 10px 40px 0 #2d9cdb;
+            font-size: 18px;
+        }
+    }
+}
+
+@media(max-width:420px) {
+    .grouped-comment-card-success {
+        width: 90%;
+        margin-bottom: 24px;
+    
+        .grouped-comment-header-success {
+            height: 28px;
+            font-size: 1rem;
+        }
+    
+        .comment {
+            padding: 16px;
+            font-size: 12px;
+        }
+    }
+    
+    // for red color comment section
+    
+    .grouped-comment-card-denger {
+        width: 90%;
+        margin-bottom: 24px;
+    
+        .grouped-comment-header-denger {
+            height: 28px;
+            font-size: 1rem;
+        }
+    
+        .comment {
+            padding: 16px;
+            font-size: 12px;
+        }
+    }
+    
+    // for perpal color comment section
+    
+    .grouped-comment-card-info {
+        width: 90%;
+        margin-bottom: 24px;
+    
+        .grouped-comment-header-info {
+            height: 28px;
+            font-size: 1rem;
+        }
+    
+        .comment {
+            padding: 16px;
+            font-size: 12px;
+        }
+    }   
+    
+    // for yellow color comment section
+    
+    .grouped-comment-card-warning {
+        width: 90%;
+        margin-bottom: 24px;
+    
+        .grouped-comment-header-warning {
+            height: 44px;
+            font-size: 1rem;
+        }
+    
+        .comment {
+            padding: 16px;
+            font-size: 12px;
+        }
+    }   
+    
+    // for perpal color comment section
+    
+    .grouped-comment-card-action {
+        width: 90%;
+        margin-bottom: 24px;
+    
+        .grouped-comment-header-action {
+            height: 44px;
+            font-size: 1rem;
+        }
+    
+        .comment {
+            padding: 16px;
+            font-size: 12px;
+        }
+    }   
+}
+
+// add comment button styles
+.add-retrospect-btn {
+    margin: 20px 30px;
+    font-size: 20px;
+
+    .success {
+        color: #66ac4b;
+        padding: 4px 16px;
+        border: 1px solid #66ac4b;
+        border-radius: 5px;
+    }
+
+    .denger {
+        color: #f12e52;
+        padding: 4px 16px;
+        border: 1px solid #f12e52;
+        border-radius: 5px;
+    }
+
+    .info {
+        color: #865ebe;
+        padding: 4px 16px;
+        border: 1px solid #865ebe;
+        border-radius: 5px;
+    }
+}
+
+.add-action-btn {
+    height: 40px;
+    margin: 20px 30px;
+    font-size: 20px;
+    position: relative;
+    right: -20px;
+
+    .action {
+        color: #2d9cdb;
+        padding: 4px 16px;
+        border: 1px solid #2d9cdb;
+        border-radius: 5px;
+    }
+}
+
+@media(max-width:420px) {
+    .add-action-btn {
+        height: 30px;
+        margin: 0;
+        font-size: 12px;
+        position: relative;
+        right: 0px;
+        top: -5px;
+    
+        .action {
+            padding: 0px 8px;
+        }
+
+    }
+}
